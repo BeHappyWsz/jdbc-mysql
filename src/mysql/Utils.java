@@ -12,7 +12,7 @@ public class Utils {
 	
 	private static String DRIVER = "com.mysql.jdbc.Driver";
 	
-	private static String URL = "jdbc:mysql://106.14.213.251:3306/mybatis?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
+	private static String URL = "jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf8&serverTimezone=UTC";
 	
 	private static String USR ="wsz";
 	
