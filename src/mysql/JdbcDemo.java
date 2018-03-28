@@ -166,6 +166,20 @@ public class JdbcDemo {
 		}
 	}
 	
+	@Test
+	public void getAll() {
+		String sql = "select id,username,password from t_user ";
+		try {
+			pstmt = conn.prepareStatement(sql);
+			rs = pstmt.executeQuery();
+			while(rs.next()) {
+				System.out.println(rs.getInt("id")+" "+rs.getString("username")+" "+rs.getString("password"));
+			}
+		} catch (SQLException e) {
+			e.printStackTrace();
+		}
+	}
+	
 	/**
 	 * 模拟transaction事务处理
 	 * 1.必须关闭自动提交功能

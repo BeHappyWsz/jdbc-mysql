@@ -20,7 +20,7 @@ public class DBUtils {
 	private static String PASSWORD;
 	
 	static {
-		ResourceBundle bundle = ResourceBundle.getBundle("db");
+		ResourceBundle bundle = ResourceBundle.getBundle("mysql/db");
 		DRIVERCLASS = bundle.getString("DRIVERCLASS");
 		URL 	    = bundle.getString("URL");
 		USERNAME    = bundle.getString("USERNAME");
